@@ -1,6 +1,5 @@
 package com.example.demo;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
 import java.net.URI;
 import java.util.Map;
 import org.springframework.beans.factory.annotation.Qualifier;
