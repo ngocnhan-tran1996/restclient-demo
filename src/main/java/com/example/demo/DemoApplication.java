@@ -46,7 +46,7 @@ public class DemoApplication {
       var response = createRestClient.method(HttpMethod.GET)
           .uri(URI.create("http://localhost:8080/get"))
           .headers(httpHeaders -> httpHeaders.setContentType(MediaType.APPLICATION_JSON))
-          .body(new ObjectMapper().writeValueAsString(body))
+          .body(body)
           .retrieve()
           .body(Map.class);
       System.out.println(response);
